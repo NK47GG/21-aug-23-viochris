@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+
+    <body>
+        <nav>
+            <img src="revou.png" class="revou">
+
+            <ul class="menu">
+                <li><a href="#">HOME</a></li>
+                <li><a href="about.html">OUR PROFILE</a></li>
+                <li><a href="achiev.html">ACHIEVEMENT</a></li>
+                <li><a href="contact.html">MESSAGE US</a></li>
+            </ul>
+        </nav>
+
+       
+
+        <header>
+            <h1>Hi All, Welcome To Website</h1>
+            <p>Ini adalah website latihan pertama</p>
+
+            <div class="slide-div">
+                <img src="welcome.jpg" class="slide">
+                <img src="gate.jpg" class="slide">
+                <img src="sekolah.jpg" class="slide">
+                <img src="perpus.jpg" class="slide">
+                <img src="park.jpg" class="slide">
+                <img src="field.jpg" class="slide">
+                <img src="kantin.jpg" class="slide">
+                <img src="toilet.jpg" class="slide">
+
+            </div>
+
+            <div class="slide-button">
+                <button onclick="plusDivs(-1)">Previous</button>
+                <button onclick="plusDivs(1)">Next</button>
+            </div>
+        </header>
+
+        <main class="main1">
+            <h1><b>OUR FACILITATION</b></h1>
+            <br>
+            <div class="container">
+                <div class="revou-container1">
+                    <img src="teacher.png" class="revou1">
+                    <p>Professional Teacher</p>
+                </div>
+                <div class="revou-container2">
+                    <img src="sport.png" class="revou1">
+                    <p>Sport Field</p>
+                </div>
+                <div class="revou-container3">
+                    <img src="school.png" class="revou1">
+                    <p>Classroom</p>
+                </div>
+            </div>
+        </main>
+
+        <main class="main2">
+            <form name="message-form" onsubmit="return validateForm()">
+                <table name="message-table">
+                    <tr name="nama-tr">
+                        <td>Nama</td>
+                        <td>:</td>
+                        <td><input type="text" placeholder="nama anda" name="full-name"></td>
+                    </tr>
+
+                    <tr name="tanggal-tr">
+                        <td>Tanggal Lahir</td>
+                        <td>:</td>
+                        <td><input type="date" class="tanggal" name="birth-date"></td>
+                    </tr>
+
+                    <tr name="kelamin-tr">
+                        <td>Jenis Kelamin</td>
+                        <td>:</td>
+                        <td><input type="radio" name="gender" value="Laki-laki"> Laki-laki
+                            <input type="radio" name="gender" value="Perempuan"> Perempuan
+                        </td>
+                    </tr>
+
+                    <tr name="pesan-tr">
+                        <td class="pesan">Pesan</td>
+                        <td class="pesan">:</td>
+                        <td><textarea class="text" placeholder="silahkan ketik pesan anda disini" name="messages"></textarea></td>
+                    </tr>
+                    
+                    <td><input type="submit" value="submit" class="submit"></td>
+                </table>
+            </form>
+            
+            <div>
+                <table>
+                    <tr>
+                        <td>nama</td>
+                        <td>:</td>
+                        <td><span id="sender-full-name"></span></td>
+                    </tr>
+
+                    <tr>
+                        <td>tanggal lahir</td>
+                        <td>:</td>
+                        <td><span id="sender-birth-date"></span></td>
+                    </tr>
+
+                    <tr>
+                        <td>jenis Kelamin</td>
+                        <td>:</td>
+                        <td><span id="sender-gender"></span></td>
+                    </tr>
+
+                    <tr>
+                        <td>pesan</td>
+                        <td>:</td>
+                        <td><span id="sender-messages"></span></td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><span id="sender-time"></span></td>
+                    </tr>
+                </table>
+            </div>
+
+            <script src="JS/script.js"></script>
+        </main>
+
+        <footer>
+            <p>Created by Silvio</p>
+        </footer>
+    </body>
+</html>
